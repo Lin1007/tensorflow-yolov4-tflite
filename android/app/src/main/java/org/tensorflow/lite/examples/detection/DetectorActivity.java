@@ -104,12 +104,6 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                             TF_OD_API_MODEL_FILE,
                             TF_OD_API_LABELS_FILE,
                             TF_OD_API_IS_QUANTIZED);
-//            detector = TFLiteObjectDetectionAPIModel.create(
-//                    getAssets(),
-//                    TF_OD_API_MODEL_FILE,
-//                    TF_OD_API_LABELS_FILE,
-//                    TF_OD_API_INPUT_SIZE,
-//                    TF_OD_API_IS_QUANTIZED);
             cropSize = TF_OD_API_INPUT_SIZE;
         } catch (final IOException e) {
             e.printStackTrace();
